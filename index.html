@@ -289,9 +289,9 @@
 <body>
 
 <div class="widget">
-  <p class="eyebrow">Cyber Safety · Interactive Explainer</p>
-  <h1 class="title">Spot the Phishing Email</h1>
-  <p class="sub">This email has 5 classic red flags. Tap each glowing number to zoom in and see exactly what to look for.</p>
+  <p class="eyebrow">The Cyber Guide</p>
+  <h1 class="title">Spot Signs of a Phishing Email</h1>
+  <p class="sub">This email has 5 classic signs of a fake email. Tap each glowing number to zoom in and see exactly what to look for.</p>
 
   <div class="progress-row">
     <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
@@ -335,7 +335,7 @@
     <div class="side-panel" id="sidePanel">
       <div class="panel-empty" id="panelEmpty"></div>
       <div class="panel-content" id="panelContent">
-        <span class="panel-tag" id="panelTag">Red flag</span>
+        <span class="panel-tag" id="panelTag">Sign</span>
         <h3 id="panelTitle"></h3>
         <p id="panelBody"></p>
       </div>
@@ -348,31 +348,31 @@
 
   var hotspotData = {
     sender: {
-      tag: "Red flag 1 · Sender address",
+      tag: "Sign 1 · Sender address",
       title: "The sender name looks official, the address doesn't.",
-      body: "It says \"SecureTrust Bank\", but the actual email address ends in securetrust-support.com, not the bank's real domain. Scammers register lookalike domains that seem legit at a glance. Always check the full address after the @, not just the display name.",
+      body: "It says \"SecureTrust Bank\", but the actual email address ends in securetrust-support.com, not the bank's real domain (they usually don't use hyphens eg. @securetrust.co.th). Scammers register lookalike domains that seem legit at a glance. Always check the full address after the @, not just the display name. \n Check the bank's official accounts online!",
       targetId: "flag-domain", fill: 0.55
     },
     greeting: {
-      tag: "Red flag 2 · Generic greeting",
+      tag: "Sign 2 · Generic greeting",
       title: '"Dear Customer" — not your actual name.',
       body: "Real banks that already have your info usually greet you by name. Scam emails get sent to thousands of people at once, so they use generic greetings that work for anyone.",
       targetId: "flag-greeting", fill: 0.45
     },
     typos: {
-      tag: "Red flag 3 · Spelling errors",
+      tag: "Sign 3 · Spelling errors",
       title: '"limitdd" — a typo that shouldn\'t be there.',
       body: "Official bank communications go through review before sending. A careless typo like this is a sign the email was written quickly by someone who isn't actually part of a professional team.",
       targetId: "flag-typo", fill: 0.5
     },
     urgency: {
-      tag: "Red flag 4 · Manufactured urgency",
+      tag: "Sign 4 · Manufactured urgency",
       title: '"Within 24 hours" — built to make you panic.',
-      body: "Scammers want you acting fast, not thinking carefully. A tight deadline and scary consequence (account closure) short-circuits careful judgement. Real security teams give you reasonable time to verify through channels you control.",
+      body: "Scammers want you acting fast, not thinking carefully. A tight deadline and scary consequence (account closure) reduces the chance of careful judgement. Real security teams give you reasonable time to verify through channels you can control.",
       targetId: "flag-urgency", fill: 0.5
     },
     link: {
-      tag: "Red flag 5 · Suspicious link / QR code",
+      tag: "Sign 5 · Suspicious link / QR code",
       title: "A QR code AND a link, both asking you to \"verify\" your PIN.",
       body: "Never scan a QR code or click a link in an unexpected email to log in. Even if it looks like your bank, go to the bank's app or type their real website address yourself instead of following a link someone else sent you.",
       targetId: "flag-qr", fill: 0.8
