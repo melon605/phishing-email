@@ -369,25 +369,25 @@
   var hotspotData = {
     sender: {
       tag: "Sign 1 · Sender address",
-      title: "The sender name looks official, the address doesn't.",
+      title: "The sender name looks official, but the address doesn't.",
       body: "The actual email address ends in securetrust-support.com, not the bank's real domain (they usually don't use hyphens eg. @securetrust.co.th). Scammers register lookalike domains that seem legit at a glance. Always check the full address after the @, not just the display name. \n Check the bank's official accounts online!",
       targetId: "flag-domain", fill: 0.55
     },
     greeting: {
       tag: "Sign 2 · Generic greeting",
-      title: '"Dear Customer" — not your actual name.',
+      title: '"Dear Customer" not your actual name.',
       body: "Real banks that already have your info usually greet you by name. Scam emails get sent to thousands of people at once, so they use generic greetings that work for anyone.",
       targetId: "flag-greeting", fill: 0.45
     },
     typos: {
       tag: "Sign 3 · Spelling errors",
-      title: '"limitdd" — a typo that shouldn\'t be there.',
+      title: '"limitdd" a typo shouldn\'t in any important email.',
       body: "Official bank communications go through review before sending. A careless typo like this is a sign the email was written quickly by someone who isn't actually part of a professional team.",
       targetId: "flag-typo", fill: 0.5
     },
     urgency: {
       tag: "Sign 4 · Manufactured urgency",
-      title: '"Within 24 hours" — built to make you panic.',
+      title: '"Within 24 hours", built to make you panic.',
       body: "Scammers want you acting fast, not thinking carefully. A tight deadline and scary consequence (account closure) reduces the chance of careful judgement. Real security teams give you reasonable time to verify through channels you can control.",
       targetId: "flag-urgency", fill: 0.5
     },
